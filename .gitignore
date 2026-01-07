@@ -89,3 +89,5 @@ outputs/
 # Logs
 *.log
 logs/
+output/
+data/videos/

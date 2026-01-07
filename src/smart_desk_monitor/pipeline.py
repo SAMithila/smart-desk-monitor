@@ -296,7 +296,8 @@ def run_pipeline(
     input_path: Union[str, Path],
     output_dir: Optional[Union[str, Path]] = None,
     config: Optional[PipelineConfig] = None,
-    **kwargs
+    exclude_patterns: Optional[List[str]] = None,
+    show_progress: bool = True,
 ) -> dict:
     """
     Convenience function to run the pipeline.
@@ -305,7 +306,8 @@ def run_pipeline(
         input_path: Video file or directory of videos
         output_dir: Output directory
         config: Pipeline configuration
-        **kwargs: Additional arguments passed to process methods
+        exclude_patterns: Filename patterns to exclude (only for directories)
+        show_progress: Whether to show progress bars
 
     Returns:
         Dictionary of results
@@ -314,7 +316,16 @@ def run_pipeline(
     input_path = Path(input_path)
 
     if input_path.is_file():
-        results = pipeline.process_video(input_path, output_dir, **kwargs)
+        results = pipeline.process_video(
+            input_path,
+            output_dir,
+            show_progress=show_progress
+        )
         return {input_path.stem: results}
     else:
-        return pipeline.process_directory(input_path, output_dir, **kwargs)
+        return pipeline.process_directory(
+            input_path,
+            output_dir,
+            exclude_patterns=exclude_patterns,
+            show_progress=show_progress
+        )
