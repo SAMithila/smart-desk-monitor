@@ -190,7 +190,7 @@ Tracked frames with bounding boxes and IDs are saved to `output/video_name/track
 
 ## Evaluation Framework
 
-The evaluation framework provides self-supervised metrics to assess tracking quality **without requiring ground truth annotations**. This is valuable for real-world scenarios where labeled data is unavailable.
+The evaluation framework provides self-supervised metrics to assess tracking quality **without requiring ground truth annotations**. This is valuable for real-world scenarios where labeled data is limited or unavailable.
 
 ### Metrics Computed
 
@@ -344,7 +344,7 @@ class CustomAnalyzer(TrackingAnalyzer):
 
 ## License
 
-MIT License - see LICENSE file for details.
+This project is licensed under the MIT License. See the LICENSE file in the repository root for the full license text.
 
 ## Acknowledgments
 
