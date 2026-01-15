@@ -1,6 +1,7 @@
-# ObjectSpace
+🎯 ObjectSpace — Production-Quality Object Detection & Tracking Pipeline
 
-> 🎯 A production-quality object detection & tracking pipeline for workspace monitoring — demonstrating real-world ML engineering with self-supervised evaluation metrics.
+ObjectSpace is a modular, end-to-end pipeline for object detection and multi-object tracking in videos, designed for workspace monitoring with self-supervised evaluation metrics—all without requiring labeled data.
+
 
 ![Demo](assets/demo.gif)
 
@@ -45,7 +46,7 @@ The built-in evaluation framework measures tracking quality **without ground tru
 | video4 (simple) | 78.4 | 95.9 | 100.0 | 8 | 0 |
 | **Average** | **53.2** | **76.7** | **56.3** | - | - |
 
-### Key Findings
+### Insights:
 
 - ✅ **100% stability** on simple scenes (≤8 concurrent tracks)
 - ⚠️ **Stability degrades** with scene complexity (IoU-based matching limitation)
