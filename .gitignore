@@ -91,3 +91,4 @@ outputs/
 logs/
 output/
 data/videos/
+.DS_Store
