@@ -4,12 +4,17 @@
 from pathlib import Path
 from datetime import datetime
 import json
-from smart_desk_monitor.evaluation import TrackingAnalyzer, EvaluationReporter
+
+from objectSpace.evaluation import TrackingAnalyzer, EvaluationReporter
 
 
 def main():
     output_dir = Path("output")
     annotation_files = sorted(output_dir.glob("*_annotations.json"))
+
+    if not annotation_files:
+        print("No annotation files found in output/")
+        return
 
     # Evaluate all videos
     results = []

@@ -2,14 +2,15 @@
 """Compare tracking evaluation across multiple videos."""
 
 from pathlib import Path
-from smart_desk_monitor.evaluation import (
+import json
+
+from objectSpace.evaluation import (
     TrackingAnalyzer,
     EvaluationReporter,
 )
-import json
 
 
-def evaluate_video(annotations_path: Path) -> dict:
+def evaluate_video(annotations_path: Path):
     """Evaluate a single video's annotations."""
     with open(annotations_path) as f:
         annotations = json.load(f)
