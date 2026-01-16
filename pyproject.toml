@@ -55,13 +55,13 @@ docs = [
 ]
 
 [project.scripts]
-+objectspace = "objectspace.cli:main"
+objectspace = "objectspace.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/yourusername/objectspace"
-Documentation = "https://github.com/yourusername/objectspace#readme"
-Repository = "https://github.com/yourusername/objectspace"
-Issues = "https://github.com/yourusername/objectspace/issues"
+Homepage = "https://github.com/SAMithila/objectspace"
+Documentation = "https://github.com/SAMithila/objectspace#readme"
+Repository = "https://github.com/SAMithila/objectspace"
+Issues = "https://github.com/SAMithila/objectspace/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -7,7 +7,7 @@ from pathlib import Path
 
 import pytest
 
-from smart_desk_monitor.config import (
+from objectSpace.config import (
     DetectorConfig,
     TrackerConfig,
     VideoConfig,

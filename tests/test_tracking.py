@@ -5,7 +5,7 @@ Unit tests for tracking module.
 import numpy as np
 import pytest
 
-from smart_desk_monitor.tracking import (
+from objectSpace.tracking import (
     KalmanBoxTracker,
     compute_iou,
     compute_iou_batch,
@@ -13,7 +13,7 @@ from smart_desk_monitor.tracking import (
     SORTTracker,
     TrackState,
 )
-from smart_desk_monitor.config import TrackerConfig
+from objectSpace.config import TrackerConfig
 
 
 class TestIoU:

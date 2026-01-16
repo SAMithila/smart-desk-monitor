@@ -5,7 +5,7 @@ Unit tests for detection module.
 import numpy as np
 import pytest
 
-from smart_desk_monitor.detection import Detection, DetectionResult
+from objectSpace.detection import Detection, DetectionResult
 
 
 class TestDetection:

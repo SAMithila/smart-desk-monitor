@@ -6,8 +6,8 @@ import tempfile
 from pathlib import Path
 from io import StringIO
 
-from smart_desk_monitor.evaluation.reporter import EvaluationReporter
-from smart_desk_monitor.evaluation.metrics import (
+from objectSpace.evaluation.reporter import EvaluationReporter
+from objectSpace.evaluation.metrics import (
     EvaluationResult,
     FragmentationMetrics,
     IDSwitchMetrics,

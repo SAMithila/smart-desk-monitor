@@ -3,7 +3,7 @@
 import pytest
 import time
 
-from smart_desk_monitor.evaluation.analyzer import (
+from objectSpace.evaluation.analyzer import (
     TrackingAnalyzer,
     TimingContext,
     compute_iou,
@@ -371,7 +371,7 @@ class TestScoring:
         analyzer = TrackingAnalyzer()
         
         # Create mock id_switches result with high switch rate
-        from smart_desk_monitor.evaluation.metrics import IDSwitchMetrics
+        from objectSpace.evaluation.metrics import IDSwitchMetrics
         
         id_switches = IDSwitchMetrics(
             total_switches=10,
